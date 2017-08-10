@@ -1,0 +1,494 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$LANG	layers/+misc/chinese/config.vim	/^  let $LANG = 'zh_CN.UTF-8'$/;"	v
+$LANG	layers/+tools/fzf/config.vim	/^  let $LANG = 'en_US'$/;"	v
++	layers/+distributions/better-defaults/config.vim	/^  noremap + :Bigger<CR>$/;"	m
+-	layers/+distributions/better-defaults/config.vim	/^  noremap - :Smaller<CR>$/;"	m
+/	layers/+distributions/better-defaults/config.vim	/^      map \/  <Plug>(incsearch-forward)$/;"	m
+<BS>	layers/+completion/auto-completion/config.vim	/^  inoremap <expr><BS> deoplete#smart_close_popup()."\\<C-h>"$/;"	m
+<BS>	layers/+completion/auto-completion/config.vim	/^  inoremap <expr><BS> neocomplete#smart_close_popup()."\\<C-h>"$/;"	m
+<C-Tab>	layers/+distributions/better-defaults/keybindings.vim	/^imap   <C-Tab>  <C-O>:tabnext<CR>$/;"	m
+<C-Tab>	layers/+distributions/better-defaults/keybindings.vim	/^map    <C-Tab>  :tabnext<CR>$/;"	m
+<C-g>	layers/+completion/auto-completion/config.vim	/^  inoremap <expr><C-g>     deoplete#undo_completion()$/;"	m
+<C-g>	layers/+completion/auto-completion/config.vim	/^  inoremap <expr><C-g>     neocomplete#undo_completion()$/;"	m
+<C-h>	layers/+completion/auto-completion/config.vim	/^  inoremap <expr><C-h> deoplete#smart_close_popup()."\\<C-h>"$/;"	m
+<C-h>	layers/+completion/auto-completion/config.vim	/^  inoremap <expr><C-h> neocomplete#smart_close_popup()."\\<C-h>"$/;"	m
+<C-l>	layers/+completion/auto-completion/config.vim	/^  inoremap <expr><C-l>     deoplete#complete_common_string()$/;"	m
+<C-l>	layers/+completion/auto-completion/config.vim	/^  inoremap <expr><C-l>     neocomplete#complete_common_string()$/;"	m
+<C-p>	layers/+vim/ctrlp/config.vim	/^  nnoremap <C-p> :CtrlP<CR>$/;"	m
+<CR>	layers/+completion/auto-completion/config.vim	/^  inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>$/;"	m
+<CR>	layers/+programming/code-snippets/config.vim	/^  inoremap <expr> <CR> pumvisible() ? "\\<C-R>=ExpandSnippetOrCarriageReturn()\\<CR>" : "\\<CR>"$/;"	m
+<F20>	layers/+programming/programming/config.vim	/^  nmap <F20> <Plug>MoveLineDown$/;"	m
+<F20>	layers/+programming/programming/config.vim	/^  vmap <F20> <Plug>MoveBlockDown$/;"	m
+<F21>	layers/+programming/programming/config.vim	/^  nmap <F21> <Plug>MoveLineUp$/;"	m
+<F21>	layers/+programming/programming/config.vim	/^  vmap <F21> <Plug>MoveBlockUp$/;"	m
+<F4>	layers/+tools/file-manager/config.vim	/^  inoremap <F4> <ESC>:NERDTreeToggle<CR>$/;"	m
+<F4>	layers/+tools/file-manager/config.vim	/^  nnoremap <F4> :NERDTreeToggle<CR>$/;"	m
+<F5>	layers/+programming/programming/config.vim	/^  nnoremap <F5> :call spacevim#util#CompileAndRun()<CR>$/;"	m
+<F6>	layers/+programming/programming/config.vim	/^  inoremap <F6> <ESC>:TagbarToggle<CR>$/;"	m
+<F6>	layers/+programming/programming/config.vim	/^  nnoremap <F6> :TagbarToggle<CR>$/;"	m
+<F8>	layers/+tools/srcexpl/config.vim	/^ nmap <F8> :SrcExplToggle<CR> $/;"	m
+<Leader>;;	layers/+programming/editing/config.vim	/^  nmap <Leader>;; <Plug>NERDCommenterToggle$/;"	m
+<Leader>;;	layers/+programming/editing/config.vim	/^  omap <Leader>;; <Plug>NERDCommenterToggle$/;"	m
+<Leader>;;	layers/+programming/editing/config.vim	/^  vmap <Leader>;; <Plug>NERDCommenterToggle$/;"	m
+<Leader><Leader>	layers/+vim/better-motion/config.vim	/^map <Leader><Leader> <Plug>(easymotion-prefix)$/;"	m
+<Leader>?	layers/+tools/fzf/config.vim	/^  nmap <Leader>? <plug>(fzf-maps-n)$/;"	m
+<Leader>?	layers/+tools/fzf/config.vim	/^  omap <Leader>? <plug>(fzf-maps-o)$/;"	m
+<Leader>a&	layers/+vim/text-align/config.vim	/^  nmap <Leader>a& :Tabularize \/&<CR>$/;"	m
+<Leader>a&	layers/+vim/text-align/config.vim	/^  vmap <Leader>a& :Tabularize \/&<CR>$/;"	m
+<Leader>a,	layers/+vim/text-align/config.vim	/^  nmap <Leader>a, :Tabularize \/,<CR>$/;"	m
+<Leader>a,	layers/+vim/text-align/config.vim	/^  vmap <Leader>a, :Tabularize \/,<CR>$/;"	m
+<Leader>a,,	layers/+vim/text-align/config.vim	/^  nmap <Leader>a,, :Tabularize \/,\\zs<CR>$/;"	m
+<Leader>a,,	layers/+vim/text-align/config.vim	/^  vmap <Leader>a,, :Tabularize \/,\\zs<CR>$/;"	m
+<Leader>a:	layers/+vim/text-align/config.vim	/^  nmap <Leader>a: :Tabularize \/:<CR>$/;"	m
+<Leader>a:	layers/+vim/text-align/config.vim	/^  vmap <Leader>a: :Tabularize \/:<CR>$/;"	m
+<Leader>a::	layers/+vim/text-align/config.vim	/^  nmap <Leader>a:: :Tabularize \/:\\zs<CR>$/;"	m
+<Leader>a::	layers/+vim/text-align/config.vim	/^  vmap <Leader>a:: :Tabularize \/:\\zs<CR>$/;"	m
+<Leader>a<Bar>	layers/+vim/text-align/config.vim	/^  nmap <Leader>a<Bar> :Tabularize \/<Bar><CR>$/;"	m
+<Leader>a<Bar>	layers/+vim/text-align/config.vim	/^  vmap <Leader>a<Bar> :Tabularize \/<Bar><CR>$/;"	m
+<Leader>a=	layers/+vim/text-align/config.vim	/^  nmap <Leader>a= :Tabularize \/^[^=]*\\zs=<CR>$/;"	m
+<Leader>a=	layers/+vim/text-align/config.vim	/^  vmap <Leader>a= :Tabularize \/^[^=]*\\zs=<CR>$/;"	m
+<Leader>a=>	layers/+vim/text-align/config.vim	/^  nmap <Leader>a=> :Tabularize \/=><CR>$/;"	m
+<Leader>a=>	layers/+vim/text-align/config.vim	/^  vmap <Leader>a=> :Tabularize \/=><CR>$/;"	m
+<Leader>ag	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>ag :Ag<CR>$/;"	m
+<Leader>b?	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>b? :Buffers<CR>$/;"	m
+<Leader>bb	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>bb :Buffers<CR>$/;"	m
+<Leader>bh	layers/+distributions/better-defaults/keybindings.vim	/^nnoremap <silent><Leader>bh :Startify<CR>$/;"	m
+<Leader>en	layers/+checkers/syntax-checking/config.vim	/^  nmap <Leader>en <Plug>(ale_next)$/;"	m
+<Leader>ep	layers/+checkers/syntax-checking/config.vim	/^  nmap <Leader>ep <Plug>(ale_previous)$/;"	m
+<Leader>f?	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>f? :Files<CR>$/;"	m
+<Leader>f?	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>f? :LeaderfFile<CR>$/;"	m
+<Leader>fL	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>fL :LeaderfLineAll<CR>$/;"	m
+<Leader>fR	layers/+distributions/better-defaults/keybindings.vim	/^nnoremap <Leader>fR :source $MYVIMRC<CR>$/;"	m
+<Leader>fd	layers/+tools/file-manager/config.vim	/^  nnoremap <Leader>fd :NERDTreeFind<CR>$/;"	m
+<Leader>ff	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>ff :Files ~<CR>$/;"	m
+<Leader>ff	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>ff :LeaderfFile ~<CR>$/;"	m
+<Leader>fl	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>fl :LeaderfLine<CR>$/;"	m
+<Leader>fr	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>fr :LeaderfMru<CR>$/;"	m
+<Leader>fr	layers/+vim/ctrlp/config.vim	/^  nnoremap <Leader>fr :CtrlPMRU<CR>$/;"	m
+<Leader>ft	layers/+tools/file-manager/config.vim	/^  nnoremap <Leader>ft :NERDTreeToggle<CR>$/;"	m
+<Leader>gb	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gb :Gblame<CR>$/;"	m
+<Leader>gc	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gc :Gcommit<CR>$/;"	m
+<Leader>gd	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gd :Gdiff<CR>$/;"	m
+<Leader>ge	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>ge :Gedit<CR>$/;"	m
+<Leader>gg	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gg :SignifyToggle<CR>$/;"	m
+<Leader>gi	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gi :Git add -p %<CR>$/;"	m
+<Leader>gl	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gl :Glog<CR>$/;"	m
+<Leader>gp	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gp :Git push<CR>$/;"	m
+<Leader>gr	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gr :Gread<CR>$/;"	m
+<Leader>gs	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gs :Gstatus<CR>$/;"	m
+<Leader>gw	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>gw :Gwrite<CR>$/;"	m
+<Leader>gy	layers/+fun/goyo/config.vim	/^  nnoremap <Leader>gy :Goyo<CR>$/;"	m
+<Leader>jJ	layers/+vim/better-motion/config.vim	/^nmap <Leader>jJ <Plug>(easymotion-overwin-f2)$/;"	m
+<Leader>jj	layers/+vim/better-motion/config.vim	/^map  <Leader>jj <Plug>(easymotion-bd-f)$/;"	m
+<Leader>jj	layers/+vim/better-motion/config.vim	/^nmap <Leader>jj <Plug>(easymotion-overwin-f)$/;"	m
+<Leader>jl	layers/+vim/better-motion/config.vim	/^map <Leader>jl <Plug>(easymotion-bd-jk)$/;"	m
+<Leader>jl	layers/+vim/better-motion/config.vim	/^nmap <Leader>jl <Plug>(easymotion-overwin-line)$/;"	m
+<Leader>jw	layers/+vim/better-motion/config.vim	/^map  <Leader>jw <Plug>(easymotion-bd-w)$/;"	m
+<Leader>jw	layers/+vim/better-motion/config.vim	/^nmap <Leader>jw <Plug>(easymotion-overwin-w)$/;"	m
+<Leader>md	layers/+tools/tmux/config.vim	/^      nnoremap <Leader>md :CtrlPTmux c<cr>$/;"	m
+<Leader>mf	layers/+tools/tmux/config.vim	/^      nnoremap <Leader>mf :CtrlPTmux b<cr>$/;"	m
+<Leader>mi	layers/+tools/tmux/config.vim	/^      nnoremap <Leader>mi :CtrlPTmux ci<cr>$/;"	m
+<Leader>mm	layers/+tools/tmux/config.vim	/^      nnoremap <Leader>mm :CtrlPTmux<cr>$/;"	m
+<Leader>mw	layers/+tools/tmux/config.vim	/^      nnoremap <Leader>mw :CtrlPTmux w<cr>$/;"	m
+<Leader>pr	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>pr :ProjectMru --tiebreak=end<cr>$/;"	m
+<Leader>s	layers/+programming/editing/config.vim	/^  vmap <Leader>s :call SwoopMultiSelection()<CR>$/;"	m
+<Leader>sm	layers/+programming/editing/config.vim	/^  nnoremap <Leader>sm :call SwoopMulti()<CR>$/;"	m
+<Leader>ss	layers/+programming/editing/config.vim	/^  nnoremap <Leader>ss :call Swoop()<CR>$/;"	m
+<Leader>tC	layers/+distributions/better-defaults/keybindings.vim	/^nnoremap <Leader>tC :call spacevim#util#ToggleColorColumn()<CR>$/;"	m
+<Leader>tc	layers/+distributions/better-defaults/keybindings.vim	/^nnoremap <Leader>tc :call spacevim#util#ToggleCursorColumn()<CR>$/;"	m
+<Leader>tg	layers/+version-control/git/config.vim	/^  nnoremap <silent> <Leader>tg :GitGutterToggle<CR>$/;"	m
+<Leader>ti	layers/+programming/programming/config.vim	/^  nnoremap <Leader>ti :IndentGuidesToggle<CR>$/;"	m
+<Leader>ts	layers/+checkers/syntax-checking/config.vim	/^  nnoremap <Leader>ts :ALEToggle<CR>$/;"	m
+<Leader>ts	layers/+checkers/syntax-checking/config.vim	/^  nnoremap <Leader>ts :SyntasticToggleMode<CR>$/;"	m
+<Leader>tt	layers/+programming/programming/config.vim	/^  nnoremap <Leader>tt :TagbarToggle<CR>$/;"	m
+<Leader>w?	layers/+tools/fzf/config.vim	/^  nnoremap <Leader>w? :Windows<CR>$/;"	m
+<Leader>ww	layers/+distributions/better-defaults/keybindings.vim	/^nmap <Leader>ww <Plug>(choosewin)$/;"	m
+<Leader>xa	layers/+vim/text-align/config.vim	/^  nmap <Leader>xa <Plug>(EasyAlign)$/;"	m
+<Leader>xd	layers/+distributions/better-defaults/keybindings.vim	/^nnoremap <Leader>xd :StripWhitespace<CR>$/;"	m
+<LocalLeader>	layers/+completion/unite/config.vim	/^  nmap <LocalLeader> [menu]$/;"	m
+<M-Tab>	layers/+distributions/better-defaults/keybindings.vim	/^imap   <M-Tab>  <C-O>:tabprev<CR>$/;"	m
+<M-Tab>	layers/+distributions/better-defaults/keybindings.vim	/^map    <M-Tab>  :tabprev<CR>$/;"	m
+<S-Tab>	layers/+distributions/better-defaults/keybindings.vim	/^nnoremap <S-Tab> :bp<CR>$/;"	m
+<TAB>	layers/+completion/auto-completion/config.vim	/^  inoremap <expr><TAB>  pumvisible() ? "\\<C-n>" : "\\<TAB>"$/;"	m
+<Tab>	layers/+distributions/better-defaults/keybindings.vim	/^nnoremap <Tab> :bn<CR>$/;"	m
+<leader>tl	layers/+tools/tagbar/config.vim	/^nmap <leader>tl :TagbarToggle<cr><c-w><c-l>$/;"	m
+?	layers/+distributions/better-defaults/config.vim	/^      map ?  <Plug>(incsearch-backward)$/;"	m
+ALEGetError	layers/+checkers/syntax-checking/config.vim	/^  function! ALEGetError()$/;"	f
+ALEGetWarning	layers/+checkers/syntax-checking/config.vim	/^  function! ALEGetWarning()$/;"	f
+Bigger	layers/+distributions/better-defaults/config.vim	/^  command! Bigger  :let &guifont = substitute(&guifont, '\\d\\+$', '\\=submatch(0)+1', '')$/;"	c
+BuildYCM	layers/+tools/ycmd/packages.vim	/^function! BuildYCM(info)$/;"	f
+DirectoryOfThisScript	layers/+tools/ycmd/global_conf.py	/^def DirectoryOfThisScript():$/;"	f
+ExpandSnippetOrCarriageReturn	layers/+programming/code-snippets/config.vim	/^  function! ExpandSnippetOrCarriageReturn()$/;"	f
+FlagsForFile	layers/+tools/ycmd/global_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f
+GetCompilationInfoForFile	layers/+tools/ycmd/global_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f
+IsHeaderFile	layers/+tools/ycmd/global_conf.py	/^def IsHeaderFile( filename ):$/;"	f
+MakeRelativePathsInFlagsAbsolute	layers/+tools/ycmd/global_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f
+MyLastWindow	layers/+distributions/spacevim/config.vim	/^  function! MyLastWindow()$/;"	f
+MyTabLine	layers/+distributions/spacevim/config.vim	/^function! MyTabLine()$/;"	f
+Rtp	layers/+distributions/better-defaults/keybindings.vim	/^command! -bar -nargs=0 Rtp :call spacevim#util#Runtimepath()$/;"	c
+SOURCE_EXTENSIONS	layers/+tools/ycmd/global_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v
+Smaller	layers/+distributions/better-defaults/config.vim	/^  command! Smaller :let &guifont = substitute(&guifont, '\\d\\+$', '\\=submatch(0)-1', '')$/;"	c
+Source	autoload/spacevim.vim	/^function! s:Source(file)$/;"	f
+[menu]	layers/+completion/unite/config.vim	/^  nnoremap [menu] <Nop>$/;"	m
+[menu]f	layers/+completion/unite/config.vim	/^  nnoremap <silent>[menu]f :Unite -silent -winheight=20$/;"	m
+[menu]m	layers/+completion/unite/config.vim	/^  nnoremap <silent>[menu]m :Unite -silent -winheight=40 menu<CR>$/;"	m
+[menu]p	layers/+completion/unite/config.vim	/^  nnoremap <silent>[menu]p :Unite -silent$/;"	m
+[menu]t	layers/+completion/unite/config.vim	/^  nnoremap <silent>[menu]t :Unite -silent$/;"	m
+[menu]u	layers/+completion/unite/config.vim	/^  nnoremap <silent>[menu]u :Unite -silent$/;"	m
+[menu]v	layers/+completion/unite/config.vim	/^  nnoremap <silent>[menu]v :Unite -silent$/;"	m
+[menu]x	layers/+completion/unite/config.vim	/^  nnoremap <silent>[menu]x :Unite -silent -winheight=20$/;"	m
+assign_name	autoload/spacevim/layer.vim	/^function! s:assign_name()$/;"	f
+backup	docs/install.sh	/^backup() {$/;"	f
+check_dot_spacevim	autoload/spacevim.vim	/^function! s:check_dot_spacevim()$/;"	f
+check_vim_plug	autoload/spacevim.vim	/^function! s:check_vim_plug(plug_path)$/;"	f
+compilation_database_folder	layers/+tools/ycmd/global_conf.py	/^compilation_database_folder = ''$/;"	v
+config	autoload/spacevim.vim	/^function! s:config()$/;"	f
+create_symlinks	docs/install.sh	/^create_symlinks() {$/;"	f
+database	layers/+tools/ycmd/global_conf.py	/^  database = None$/;"	v
+database	layers/+tools/ycmd/global_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+debug	docs/install.sh	/^debug() {$/;"	f
+define_command	autoload/spacevim.vim	/^function! s:define_command()$/;"	f
+enter_full_screen	autoload/spacevim/gui.vim	/^function! s:enter_full_screen()$/;"	f
+erlang_show_errors	layers/+lang/erlang/config.vim	/^let erlang_show_errors = 0$/;"	v
+error	docs/install.sh	/^error() {$/;"	f
+exists	docs/install.sh	/^exists() {$/;"	f
+f	layers/generate_layers.py	/^f = open(os.path.expandvars('.\/LAYERS.md'), 'w')$/;"	v
+filter_plugins	autoload/spacevim.vim	/^function! s:filter_plugins()$/;"	f
+flags	layers/+tools/ycmd/global_conf.py	/^flags = [$/;"	v
+g/	layers/+distributions/better-defaults/config.vim	/^      map g\/ <Plug>(incsearch-stay)$/;"	m
+g:LINUX	config/init.vim	/^let g:LINUX = has('unix') && !has('macunix') && !has('win32unix')$/;"	v
+g:MAC	config/init.vim	/^let g:MAC = has('macunix')$/;"	v
+g:NERDSpaceDelims	layers/+programming/editing/config.vim	/^  let g:NERDSpaceDelims=1$/;"	v
+g:NERDTreeAutoDeleteBuffer	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeAutoDeleteBuffer=1$/;"	v
+g:NERDTreeDirArrowCollapsible	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeDirArrowCollapsible = '▼'$/;"	v
+g:NERDTreeDirArrowExpandable	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeDirArrowExpandable = '►'$/;"	v
+g:NERDTreeExactMatchHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error$/;"	v
+g:NERDTreeExactMatchHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files$/;"	v
+g:NERDTreeExactMatchHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeExactMatchHighlightColor['.ipynb'] = s:lightPurple " sets the color for .ipynb files$/;"	v
+g:NERDTreeExactMatchHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeExactMatchHighlightColor['.py'] = s:red " sets the color for .ipynb files$/;"	v
+g:NERDTreeExactMatchHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeExactMatchHighlightColor['tex'] = s:rspec_red " sets the color of css files to blue$/;"	v
+g:NERDTreeExtensionHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeExtensionHighlightColor = {} " this line is needed to avoid error$/;"	v
+g:NERDTreeExtensionHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeExtensionHighlightColor['css'] = s:blue " sets the color of css files to blue$/;"	v
+g:NERDTreeExtensionHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeExtensionHighlightColor['org'] = s:pink " sets the color of css files to blue$/;"	v
+g:NERDTreeExtensionHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeExtensionHighlightColor['python'] = s:green " sets the color of css files to blue$/;"	v
+g:NERDTreeIgnore	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeIgnore=[$/;"	v
+g:NERDTreeIndicatorMapCustom	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeIndicatorMapCustom = {$/;"	v
+g:NERDTreePatternMatchHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreePatternMatchHighlightColor = {} " this line is needed to avoid error$/;"	v
+g:NERDTreePatternMatchHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreePatternMatchHighlightColor['*.py$'] = s:red " sets the color for files ending with _spec.rb$/;"	v
+g:NERDTreePatternMatchHighlightColor	layers/+tools/file-manager/config.vim	/^  let g:NERDTreePatternMatchHighlightColor['.*_spec\\.rb$'] = s:rspec_red " sets the color for files ending with _spec.rb$/;"	v
+g:NERDTreeShowHidden	layers/+tools/file-manager/config.vim	/^  let g:NERDTreeShowHidden=1$/;"	v
+g:Powerline_symbols	layers/+themes/airline/config.vim	/^  let g:Powerline_symbols='fancy'$/;"	v
+g:SrcExpl_gobackKey	layers/+tools/srcexpl/config.vim	/^ let g:SrcExpl_gobackKey = "<SPACE>" $/;"	v
+g:SrcExpl_jumpKey	layers/+tools/srcexpl/config.vim	/^ let g:SrcExpl_jumpKey = "<ENTER>" $/;"	v
+g:SrcExpl_pluginList	layers/+tools/srcexpl/config.vim	/^ let g:SrcExpl_pluginList = [ $/;"	v
+g:SrcExpl_refreshTime	layers/+tools/srcexpl/config.vim	/^ let g:SrcExpl_refreshTime = 100 $/;"	v
+g:SrcExpl_winHeight	layers/+tools/srcexpl/config.vim	/^ let g:SrcExpl_winHeight = 8 $/;"	v
+g:UltiSnipsExpandTrigger	layers/+programming/code-snippets/config.vim	/^  let g:UltiSnipsExpandTrigger = '<C-e>'$/;"	v
+g:UltiSnipsJumpBackwardTrigger	layers/+programming/code-snippets/config.vim	/^  let g:UltiSnipsJumpBackwardTrigger = '<C-k>'$/;"	v
+g:UltiSnipsJumpForwardTrigger	layers/+programming/code-snippets/config.vim	/^  let g:UltiSnipsJumpForwardTrigger = '<C-j>'$/;"	v
+g:UltiSnipsListSnippets	layers/+programming/code-snippets/config.vim	/^  let g:UltiSnipsListSnippets = '<C-l>'$/;"	v
+g:UltiSnipsSnippetDirectories	layers/+programming/code-snippets/config.vim	/^  let g:UltiSnipsSnippetDirectories=['UltiSnips']$/;"	v
+g:UltiSnipsSnippetsDir	layers/+programming/code-snippets/config.vim	/^  let g:UltiSnipsSnippetsDir = [g:spacevim_dir.'\/private\/UltiSnips', g:spacevim_plug_home.'vim-snippets\/UltiSnips\/']$/;"	v
+g:WINDOWS	config/init.vim	/^let g:WINDOWS = has('win32') || has('win64')$/;"	v
+g:acp_enableAtStartup	layers/+completion/auto-completion/config.vim	/^  let g:acp_enableAtStartup = 0$/;"	v
+g:airline#extensions#ale#error_symbol	layers/+themes/airline/config.vim	/^  let g:airline#extensions#ale#error_symbol = '•'$/;"	v
+g:airline#extensions#ale#warning_symbol	layers/+themes/airline/config.vim	/^  let g:airline#extensions#ale#warning_symbol = '•'$/;"	v
+g:airline#extensions#default#layout	layers/+themes/airline/config.vim	/^  let g:airline#extensions#default#layout = [$/;"	v
+g:airline#extensions#default#section_truncate_width	layers/+themes/airline/config.vim	/^  let g:airline#extensions#default#section_truncate_width = {$/;"	v
+g:airline#extensions#tabline#buffer_idx_mode	layers/+themes/airline/config.vim	/^  let g:airline#extensions#tabline#buffer_idx_mode = 1$/;"	v
+g:airline#extensions#tabline#buffer_nr_format	layers/+themes/airline/config.vim	/^  let g:airline#extensions#tabline#buffer_nr_format = '%s:'$/;"	v
+g:airline#extensions#tabline#buffer_nr_show	layers/+themes/airline/config.vim	/^  let g:airline#extensions#tabline#buffer_nr_show = 1$/;"	v
+g:airline#extensions#tabline#enabled	layers/+themes/airline/config.vim	/^  let g:airline#extensions#tabline#enabled=1$/;"	v
+g:airline#extensions#tabline#fnamecollapse	layers/+themes/airline/config.vim	/^  let g:airline#extensions#tabline#fnamecollapse = 1$/;"	v
+g:airline#extensions#tabline#fnamemod	layers/+themes/airline/config.vim	/^  let g:airline#extensions#tabline#fnamemod = ':t'$/;"	v
+g:airline#extensions#tabline#fnametruncate	layers/+themes/airline/config.vim	/^  let g:airline#extensions#tabline#fnametruncate = 0$/;"	v
+g:airline#extensions#tabline#formatter	layers/+themes/airline/config.vim	/^  let g:airline#extensions#tabline#formatter = 'unique_tail_improved'$/;"	v
+g:airline#extensions#tagbar#enabled	layers/+themes/airline/config.vim	/^  let g:airline#extensions#tagbar#enabled = 0$/;"	v
+g:airline_theme	layers/+themes/airline/config.vim	/^  let g:airline_theme='violet'$/;"	v
+g:ale_echo_msg_error_str	layers/+checkers/syntax-checking/config.vim	/^    let g:ale_echo_msg_error_str = 'Error'$/;"	v
+g:ale_echo_msg_error_str	layers/+checkers/syntax-checking/config.vim	/^    let g:ale_echo_msg_error_str = '✹ Error'$/;"	v
+g:ale_echo_msg_format	layers/+checkers/syntax-checking/config.vim	/^  let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'$/;"	v
+g:ale_echo_msg_warning_str	layers/+checkers/syntax-checking/config.vim	/^    let g:ale_echo_msg_warning_str = 'Warning'$/;"	v
+g:ale_echo_msg_warning_str	layers/+checkers/syntax-checking/config.vim	/^    let g:ale_echo_msg_warning_str = '⚠ Warning'$/;"	v
+g:ale_enabled	layers/+checkers/syntax-checking/config.vim	/^  let g:ale_enabled = 0$/;"	v
+g:ale_linters	layers/+checkers/syntax-checking/config.vim	/^  let g:ale_linters = {$/;"	v
+g:ale_set_highlights	layers/+checkers/syntax-checking/config.vim	/^  let g:ale_set_highlights = 0$/;"	v
+g:ale_sign_error	layers/+checkers/syntax-checking/config.vim	/^    let g:ale_sign_error = '•'$/;"	v
+g:ale_sign_error	layers/+checkers/syntax-checking/config.vim	/^    let g:ale_sign_error = emoji#for('boom')$/;"	v
+g:ale_sign_warning	layers/+checkers/syntax-checking/config.vim	/^    let g:ale_sign_warning = '•'$/;"	v
+g:ale_sign_warning	layers/+checkers/syntax-checking/config.vim	/^    let g:ale_sign_warning = emoji#for('small_orange_diamond')$/;"	v
+g:ale_statusline_format	layers/+checkers/syntax-checking/config.vim	/^  let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']$/;"	v
+g:c_no_curly_error	layers/+lang/c-c++/config.vim	/^  let g:c_no_curly_error=1$/;"	v
+g:config_dir	config/main.vim	/^let g:config_dir = fnamemodify(expand('<sfile>'), ':p:h:gs?\\\\?'.((has('win16') || has('win32') || has('win64'))?'\\':'\/') . '?')$/;"	v
+g:cpp_class_scope_highlight	layers/+lang/c-c++/config.vim	/^  let g:cpp_class_scope_highlight = 1$/;"	v
+g:ctrlp_by_filename	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_by_filename = 1$/;"	v
+g:ctrlp_clear_cache_on_exit	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_clear_cache_on_exit=0  		" speed up by not removing clearing cache evertime$/;"	v
+g:ctrlp_cmd	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_cmd = 'CtrlP'$/;"	v
+g:ctrlp_custom_ignore	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_custom_ignore = {$/;"	v
+g:ctrlp_follow_symlinks	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_follow_symlinks=1$/;"	v
+g:ctrlp_map	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_map = '<c-p>'$/;"	v
+g:ctrlp_match_func	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }$/;"	v
+g:ctrlp_match_window_bottom	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_match_window_bottom = 0		" show the match window at the top of the screen$/;"	v
+g:ctrlp_max_height	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_max_height = 10				" maxiumum height of match window$/;"	v
+g:ctrlp_mruf_exclude	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_mruf_exclude = '\/tmp\/.*\\|\/temp\/.*'$/;"	v
+g:ctrlp_mruf_max	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_mruf_max = 250 				" number of recently opened files$/;"	v
+g:ctrlp_mruf_relative	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_mruf_relative = 1$/;"	v
+g:ctrlp_regexp	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_regexp = 1$/;"	v
+g:ctrlp_switch_buffer	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_switch_buffer = 'et'		" jump to a file if it's open already$/;"	v
+g:ctrlp_use_caching	layers/+vim/ctrlp/config.vim	/^    let g:ctrlp_use_caching = 0$/;"	v
+g:ctrlp_use_caching	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_use_caching = 1				" enable caching$/;"	v
+g:ctrlp_user_command	layers/+vim/ctrlp/config.vim	/^    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'$/;"	v
+g:ctrlp_user_command	layers/+vim/ctrlp/config.vim	/^    let g:ctrlp_user_command = ['.git\/', 'git --git-dir=%s\/.git ls-files -oc --exclude-standard']$/;"	v
+g:ctrlp_working_path_mode	layers/+vim/ctrlp/config.vim	/^  let g:ctrlp_working_path_mode = 'ra'	" search for nearest ancestor like .git, .hg, and the directory of the current file$/;"	v
+g:deoplete#enable_at_startup	layers/+completion/auto-completion/config.vim	/^  let g:deoplete#enable_at_startup = 1$/;"	v
+g:deoplete#enable_smart_case	layers/+completion/auto-completion/config.vim	/^  let g:deoplete#enable_smart_case = 1$/;"	v
+g:deoplete#keyword_patterns	layers/+completion/auto-completion/config.vim	/^    let g:deoplete#keyword_patterns = {}$/;"	v
+g:deoplete#keyword_patterns	layers/+completion/auto-completion/config.vim	/^  let g:deoplete#keyword_patterns['default'] = '\\h\\w*'$/;"	v
+g:deoplete#omni#input_patterns	layers/+completion/auto-completion/config.vim	/^    let g:deoplete#omni#input_patterns = {}$/;"	v
+g:deoplete#omni#input_patterns	layers/+completion/auto-completion/config.vim	/^  let g:deoplete#omni#input_patterns.erlang = '[^. *\\t]:\\w*'$/;"	v
+g:deoplete#omni#input_patterns	layers/+completion/auto-completion/config.vim	/^  let g:deoplete#omni#input_patterns.perl = '\\h\\w*->\\h\\w*\\|\\h\\w*::'$/;"	v
+g:deoplete#sources#dictionary#dictionaries	layers/+completion/auto-completion/config.vim	/^  let g:deoplete#sources#dictionary#dictionaries = {$/;"	v
+g:deoplete#sources#syntax#min_keyword_length	layers/+completion/auto-completion/config.vim	/^  let g:deoplete#sources#syntax#min_keyword_length = 3$/;"	v
+g:elm_format_autosave	layers/+lang/elm/config.vim	/^  let g:elm_format_autosave = 1$/;"	v
+g:fzf_colors	layers/+tools/fzf/config.vim	/^  let g:fzf_colors = {$/;"	v
+g:gitgutter_override_sign_column_highlight	layers/+version-control/git/config.vim	/^  let g:gitgutter_override_sign_column_highlight = 0$/;"	v
+g:gitgutter_sign_added	layers/+version-control/git/config.vim	/^  let g:gitgutter_sign_added = '+'$/;"	v
+g:gitgutter_sign_modified	layers/+version-control/git/config.vim	/^  let g:gitgutter_sign_modified = '~'$/;"	v
+g:gitgutter_sign_modified_removed	layers/+version-control/git/config.vim	/^  let g:gitgutter_sign_modified_removed = 'ww'$/;"	v
+g:gitgutter_sign_removed	layers/+version-control/git/config.vim	/^  let g:gitgutter_sign_removed = '-'$/;"	v
+g:gitgutter_sign_removed_first_line	layers/+version-control/git/config.vim	/^  let g:gitgutter_sign_removed_first_line = '^^'$/;"	v
+g:go_highlight_build_constraints	layers/+lang/go/config.vim	/^  let g:go_highlight_build_constraints = 1$/;"	v
+g:go_highlight_fields	layers/+lang/go/config.vim	/^  let g:go_highlight_fields = 1$/;"	v
+g:go_highlight_functions	layers/+lang/go/config.vim	/^  let g:go_highlight_functions = 1$/;"	v
+g:go_highlight_methods	layers/+lang/go/config.vim	/^  let g:go_highlight_methods = 1$/;"	v
+g:go_highlight_operators	layers/+lang/go/config.vim	/^  let g:go_highlight_operators = 1$/;"	v
+g:go_highlight_types	layers/+lang/go/config.vim	/^  let g:go_highlight_types = 1$/;"	v
+g:indentLine_char	layers/+programming/programming/config.vim	/^  let g:indentLine_char='¦'$/;"	v
+g:indentLine_color_gui	layers/+programming/programming/config.vim	/^  let g:indentLine_color_gui = '#4A9586'$/;"	v
+g:indentLine_color_term	layers/+programming/programming/config.vim	/^  let g:indentLine_color_term=239$/;"	v
+g:indentLine_concealcursor	layers/+programming/programming/config.vim	/^  let g:indentLine_concealcursor='vc'      " default 'inc'$/;"	v
+g:indentLine_enabled	layers/+programming/programming/config.vim	/^  let g:indentLine_enabled=1$/;"	v
+g:indentLine_fileTypeExclude	layers/+programming/programming/config.vim	/^  let g:indentLine_fileTypeExclude = ['help', 'startify', 'vimfiler']$/;"	v
+g:indent_guides_auto_colors	layers/+programming/programming/config.vim	/^  let g:indent_guides_auto_colors = 0$/;"	v
+g:indent_guides_enable_on_vim_startup	layers/+programming/programming/config.vim	/^  let g:indent_guides_enable_on_vim_startup = 1$/;"	v
+g:indent_guides_guide_size	layers/+programming/programming/config.vim	/^  let g:indent_guides_guide_size = 1$/;"	v
+g:indent_guides_start_level	layers/+programming/programming/config.vim	/^  let g:indent_guides_start_level = 2$/;"	v
+g:jsx_ext_required	layers/+lang/javascript/config.vim	/^  let g:jsx_ext_required = 0$/;"	v
+g:layer_path	autoload/spacevim/info.vim	/^let g:layer_path = {'markdown': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/markdown', 'chinese': '\/home\/zhouxu\/.space-vim\/layers\/+misc\/chinese', 'goyo': '\/home\/zhouxu\/.space-vim\/layers\/+fun\/goyo', 'graphviz': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/graphviz', 'typescript': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/typescript', 'unite': '\/home\/zhouxu\/.space-vim\/layers\/+completion\/unite', 'go': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/go', 'auto-completion': '\/home\/zhouxu\/.space-vim\/layers\/+completion\/auto-completion', 'c-c++': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/c-c++', 'emoji': '\/home\/zhouxu\/.space-vim\/layers\/+fun\/emoji', 'git': '\/home\/zhouxu\/.space-vim\/layers\/+version-control\/git', 'java': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/java', 'scala': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/scala', 'spacevim': '\/home\/zhouxu\/.space-vim\/layers\/+distributions\/spacevim', 'html': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/html', 'syntax-checking': '\/home\/zhouxu\/.space-vim\/layers\/+checkers\/syntax-checking', 'erlang': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/erlang', 'ctrlp': '\/home\/zhouxu\/.space-vim\/layers\/+vim\/ctrlp', 'fzf': '\/home\/zhouxu\/.space-vim\/layers\/+tools\/fzf', 'ycmd': '\/home\/zhouxu\/.space-vim\/layers\/+tools\/ycmd', 'code-snippets': '\/home\/zhouxu\/.space-vim\/layers\/+programming\/code-snippets', 'python': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/python', 'javascript': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/javascript', 'vue': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/vue', 'tmux': '\/home\/zhouxu\/.space-vim\/layers\/+tools\/tmux', 'elixir': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/elixir', 'better-motion': '\/home\/zhouxu\/.space-vim\/layers\/+vim\/better-motion', 'editing': '\/home\/zhouxu\/.space-vim\/layers\/+programming\/editing', 'ruby': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/ruby', 'text-align': '\/home\/zhouxu\/.space-vim\/layers\/+vim\/text-align', 'latex': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/latex', 'github': '\/home\/zhouxu\/.space-vim\/layers\/+version-control\/github', 'elm': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/elm', 'programming': '\/home\/zhouxu\/.space-vim\/layers\/+programming\/programming', 'tagbar': '\/home\/zhouxu\/.space-vim\/layers\/+tools\/tagbar', 'airline': '\/home\/zhouxu\/.space-vim\/layers\/+themes\/airline', 'better-defaults': '\/home\/zhouxu\/.space-vim\/layers\/+distributions\/better-defaults', 'lightline': '\/home\/zhouxu\/.space-vim\/layers\/+themes\/lightline', 'file-manager': '\/home\/zhouxu\/.space-vim\/layers\/+tools\/file-manager', 'rust': '\/home\/zhouxu\/.space-vim\/layers\/+lang\/rust'}$/;"	v
+g:layers_loaded	autoload/spacevim.vim	/^let g:layers_loaded = []$/;"	v
+g:layers_sum	autoload/spacevim/info.vim	/^let g:layers_sum = 40$/;"	v
+g:lightline	layers/+themes/lightline/config.vim	/^  let g:lightline = {$/;"	v
+g:livepreview_previewer	layers/+lang/latex/config.vim	/^    let g:livepreview_previewer = 'evince'$/;"	v
+g:livepreview_previewer	layers/+lang/latex/config.vim	/^    let g:livepreview_previewer = 'open -a texshop'$/;"	v
+g:mkdp_path_to_chrome	layers/+lang/markdown/config.vim	/^    let g:mkdp_path_to_chrome = 'C:\\\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'$/;"	v
+g:mkdp_path_to_chrome	layers/+lang/markdown/config.vim	/^    let g:mkdp_path_to_chrome = 'google-chrome'$/;"	v
+g:mkdp_path_to_chrome	layers/+lang/markdown/config.vim	/^    let g:mkdp_path_to_chrome = 'open -a safari'$/;"	v
+g:multi_cursor_next_key	layers/+programming/editing/config.vim	/^  let g:multi_cursor_next_key='<C-j>'$/;"	v
+g:multi_cursor_prev_key	layers/+programming/editing/config.vim	/^  let g:multi_cursor_prev_key='<C-k>'$/;"	v
+g:multi_cursor_quit_key	layers/+programming/editing/config.vim	/^  let g:multi_cursor_quit_key='<Esc>'$/;"	v
+g:multi_cursor_skip_key	layers/+programming/editing/config.vim	/^  let g:multi_cursor_skip_key='<C-x>'$/;"	v
+g:neocomplete#enable_at_startup	layers/+completion/auto-completion/config.vim	/^  let g:neocomplete#enable_at_startup = 1$/;"	v
+g:neocomplete#enable_smart_case	layers/+completion/auto-completion/config.vim	/^  let g:neocomplete#enable_smart_case = 1$/;"	v
+g:neocomplete#keyword_patterns	layers/+completion/auto-completion/config.vim	/^    let g:neocomplete#keyword_patterns = {}$/;"	v
+g:neocomplete#keyword_patterns	layers/+completion/auto-completion/config.vim	/^  let g:neocomplete#keyword_patterns['default'] = '\\h\\w*'$/;"	v
+g:neocomplete#sources#dictionary#dictionaries	layers/+completion/auto-completion/config.vim	/^  let g:neocomplete#sources#dictionary#dictionaries = {$/;"	v
+g:neocomplete#sources#omni#input_patterns	layers/+completion/auto-completion/config.vim	/^    let g:neocomplete#sources#omni#input_patterns = {}$/;"	v
+g:neocomplete#sources#omni#input_patterns	layers/+completion/auto-completion/config.vim	/^  let g:neocomplete#sources#omni#input_patterns.erlang = '[^. *\\t]:\\w*'$/;"	v
+g:neocomplete#sources#omni#input_patterns	layers/+completion/auto-completion/config.vim	/^  let g:neocomplete#sources#omni#input_patterns.perl = '\\h\\w*->\\h\\w*\\|\\h\\w*::'$/;"	v
+g:neocomplete#sources#syntax#min_keyword_length	layers/+completion/auto-completion/config.vim	/^  let g:neocomplete#sources#syntax#min_keyword_length = 3$/;"	v
+g:plug_options	autoload/spacevim.vim	/^let g:plug_options = {}$/;"	v
+g:pymode_breakpoint_bind	layers/+lang/python/config.vim	/^  let g:pymode_breakpoint_bind = '<leader>br'$/;"	v
+g:pymode_folding	layers/+lang/python/config.vim	/^  let g:pymode_folding = 0$/;"	v
+g:pymode_indent	layers/+lang/python/config.vim	/^  let g:pymode_indent = 1$/;"	v
+g:pymode_lint	layers/+lang/python/config.vim	/^    let g:pymode_lint = 0$/;"	v
+g:pymode_lint_checkers	layers/+lang/python/config.vim	/^  let g:pymode_lint_checkers = ['pyflakes']$/;"	v
+g:pymode_options	layers/+lang/python/config.vim	/^  let g:pymode_options = 0$/;"	v
+g:pymode_options_colorcolumn	layers/+lang/python/config.vim	/^  let g:pymode_options_colorcolumn = 1$/;"	v
+g:pymode_rope	layers/+lang/python/config.vim	/^  let g:pymode_rope = 0$/;"	v
+g:pymode_trim_whitespaces	layers/+lang/python/config.vim	/^  let g:pymode_trim_whitespaces = 0$/;"	v
+g:rainbow_active	layers/+programming/programming/config.vim	/^  let g:rainbow_active = 1$/;"	v
+g:rainbow_conf	layers/+programming/programming/config.vim	/^  let g:rainbow_conf = {$/;"	v
+g:scala_scaladoc_indent	layers/+lang/scala/config.vim	/^  let g:scala_scaladoc_indent = 1$/;"	v
+g:spacevim_core_dir	config/init.vim	/^let g:spacevim_core_dir = '\/core'$/;"	v
+g:spacevim_core_dir	config/main.vim	/^let g:spacevim_core_dir = '\/core'$/;"	v
+g:spacevim_dir	config/init.vim	/^let g:spacevim_dir = $HOME.'\/.space-vim'$/;"	v
+g:spacevim_dir	config/main.vim	/^let g:spacevim_dir = $HOME.'\/.space-vim'$/;"	v
+g:spacevim_excluded	autoload/spacevim.vim	/^let g:spacevim_excluded = []$/;"	v
+g:spacevim_gui	autoload/spacevim.vim	/^let g:spacevim_gui = has('gui_running')$/;"	v
+g:spacevim_layers_dir	autoload/spacevim.vim	/^let g:spacevim_layers_dir = '\/layers'$/;"	v
+g:spacevim_nvim	autoload/spacevim.vim	/^let g:spacevim_nvim = has('nvim') && exists('*jobwait') && !g:WINDOWS$/;"	v
+g:spacevim_plugins	autoload/spacevim.vim	/^let g:spacevim_plugins = []$/;"	v
+g:spacevim_private_layers_dir	autoload/spacevim.vim	/^let g:spacevim_private_layers_dir = '\/private'$/;"	v
+g:spacevim_tmux	autoload/spacevim.vim	/^let g:spacevim_tmux = !empty($TMUX)$/;"	v
+g:spacevim_version	config/init.vim	/^let g:spacevim_version = '0.6.0'$/;"	v
+g:spacevim_version	config/main.vim	/^let g:spacevim_version = '0.6.0'$/;"	v
+g:spacevim_vim8	autoload/spacevim.vim	/^let g:spacevim_vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+g:startify_change_to_vcs_root	layers/+distributions/better-defaults/config.vim	/^  let g:startify_change_to_vcs_root = 1$/;"	v
+g:startify_custom_header	layers/+distributions/better-defaults/config.vim	/^  let g:startify_custom_header = [$/;"	v
+g:startify_list_order	layers/+distributions/better-defaults/config.vim	/^  let g:startify_list_order = [$/;"	v
+g:swoopUseDefaultKeyMap	layers/+programming/editing/config.vim	/^  let g:swoopUseDefaultKeyMap = 0$/;"	v
+g:syntastic_aggregate_errors	layers/+checkers/syntax-checking/config.vim	/^  let g:syntastic_aggregate_errors=1$/;"	v
+g:syntastic_error_symbol	layers/+checkers/syntax-checking/config.vim	/^  let g:syntastic_error_symbol='✹'$/;"	v
+g:syntastic_html_checkers	layers/+checkers/syntax-checking/config.vim	/^  let g:syntastic_html_checkers=['tidy', 'jshint']$/;"	v
+g:syntastic_javascript_checkers	layers/+checkers/syntax-checking/config.vim	/^  let g:syntastic_javascript_checkers=['jsl', 'jshint']$/;"	v
+g:syntastic_python_checkers	layers/+checkers/syntax-checking/config.vim	/^  let g:syntastic_python_checkers=['pyflakes']$/;"	v
+g:syntastic_warning_symbol	layers/+checkers/syntax-checking/config.vim	/^  let g:syntastic_warning_symbol='✴'$/;"	v
+g:tagbar_autofocus	layers/+programming/programming/config.vim	/^  let g:tagbar_autofocus = 1$/;"	v
+g:tagbar_autopreview	layers/+tools/tagbar/config.vim	/^let g:tagbar_autopreview = 1                   " 开启自动预览 [随着光标在标签上的移动，顶部会出现一个实时的预览窗口]$/;"	v
+g:tagbar_show_linenumbers	layers/+tools/tagbar/config.vim	/^let g:tagbar_show_linenumbers = -1             " 显示行号 [使用全局关于行号的默认配置]$/;"	v
+g:tagbar_sort	layers/+programming/programming/config.vim	/^  let g:tagbar_sort = 0$/;"	v
+g:tagbar_sort	layers/+tools/tagbar/config.vim	/^let g:tagbar_sort = 1                          " 关闭排序 [也就是按标签本身在文件中的位置排序]$/;"	v
+g:topic2layers	autoload/spacevim/info.vim	/^let g:topic2layers = {'+completion': ['auto-completion', 'unite'], '+tools': ['file-manager', 'ycmd', 'tmux', 'fzf', 'tagbar'], '+fun': ['emoji', 'goyo'], '+version-control': ['git', 'github'], '+vim': ['ctrlp', 'better-motion', 'text-align'], '+themes': ['airline', 'lightline'], '+lang': ['vue', 'javascript', 'go', 'markdown', 'elixir', 'graphviz', 'java', 'scala', 'ruby', 'latex', 'html', 'typescript', 'erlang', 'elm', 'rust', 'python', 'c-c++'], '+misc': ['chinese'], '+distributions': ['better-defaults', 'spacevim'], '+checkers': ['syntax-checking'], '+programming': ['programming', 'editing', 'code-snippets']}$/;"	v
+g:topics	autoload/spacevim/info.vim	/^let g:topics = ['+programming', '+version-control', '+themes', '+misc', '+checkers', '+tools', '+vim', '+fun', '+distributions', '+lang', '+completion']$/;"	v
+g:ulti_expand_or_jump_res	layers/+programming/code-snippets/config.vim	/^  let g:ulti_expand_or_jump_res = 0$/;"	v
+g:unite_candidate_icon	layers/+completion/unite/config.vim	/^  let g:unite_candidate_icon = '∘'$/;"	v
+g:unite_enable_short_source_mes	layers/+completion/unite/config.vim	/^  let g:unite_enable_short_source_mes = 0$/;"	v
+g:unite_enable_start_insert	layers/+completion/unite/config.vim	/^  let g:unite_enable_start_insert = 0$/;"	v
+g:unite_force_overwrite_statusline	layers/+completion/unite/config.vim	/^  let g:unite_force_overwrite_statusline = 0$/;"	v
+g:unite_marked_icon	layers/+completion/unite/config.vim	/^  let g:unite_marked_icon = '✓'$/;"	v
+g:unite_prompt	layers/+completion/unite/config.vim	/^  let g:unite_prompt = '>>> '$/;"	v
+g:unite_source_buffer_time_format	layers/+completion/unite/config.vim	/^  let g:unite_source_buffer_time_format = '(%d-%m-%Y %H:%M:%S) '$/;"	v
+g:unite_source_directory_mru_time_format	layers/+completion/unite/config.vim	/^  let g:unite_source_directory_mru_time_format = '(%d-%m-%Y %H:%M:%S) '$/;"	v
+g:unite_source_file_mru_time_format	layers/+completion/unite/config.vim	/^  let g:unite_source_file_mru_time_format = '(%d-%m-%Y %H:%M:%S) '$/;"	v
+g:unite_source_history_yank_enable	layers/+completion/unite/config.vim	/^  let g:unite_source_history_yank_enable = 1$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus = {}$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.f = {$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.f.command_candidates = [$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.p = {$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.p.command_candidates = [$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.t = {$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.t.command_candidates = [$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.u = {$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.u.command_candidates = [$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.v = {$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.v.command_candidates = [$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.x = {$/;"	v
+g:unite_source_menu_menus	layers/+completion/unite/config.vim	/^  let g:unite_source_menu_menus.x.command_candidates = [$/;"	v
+g:unite_split_rule	layers/+completion/unite/config.vim	/^  let g:unite_split_rule = 'botright'$/;"	v
+g:unite_update_time	layers/+completion/unite/config.vim	/^  let g:unite_update_time = 200$/;"	v
+g:unite_winheight	layers/+completion/unite/config.vim	/^  let g:unite_winheight = 15$/;"	v
+g:user_emmet_leader_key	layers/+lang/html/config.vim	/^  let g:user_emmet_leader_key='<C-E>'$/;"	v
+g:user_emmet_mode	layers/+lang/html/config.vim	/^  let g:user_emmet_mode = 'a'$/;"	v
+g:vim_markdown_frontmatter	layers/+lang/markdown/config.vim	/^  let g:vim_markdown_frontmatter=1$/;"	v
+g:vim_markdown_math	layers/+lang/markdown/config.vim	/^  let g:vim_markdown_math=1$/;"	v
+g:vim_markdown_toc_autofit	layers/+lang/markdown/config.vim	/^  let g:vim_markdown_toc_autofit = 1$/;"	v
+g:vmt_auto_update_on_save	layers/+lang/markdown/config.vim	/^  let g:vmt_auto_update_on_save = 1$/;"	v
+g:vmt_dont_insert_fence	layers/+lang/markdown/config.vim	/^  let g:vmt_dont_insert_fence = 0$/;"	v
+g:ycm_autoclose_preview_window_after_completion	layers/+tools/ycmd/config.vim	/^  let g:ycm_autoclose_preview_window_after_completion = 1$/;"	v
+g:ycm_cache_omnifunc	layers/+tools/ycmd/config.vim	/^  let g:ycm_cache_omnifunc=0$/;"	v
+g:ycm_collect_identifiers_from_comments_and_strings	layers/+tools/ycmd/config.vim	/^  let g:ycm_collect_identifiers_from_comments_and_strings=0$/;"	v
+g:ycm_complete_in_comments	layers/+tools/ycmd/config.vim	/^  let g:ycm_complete_in_comments=1$/;"	v
+g:ycm_complete_in_strings	layers/+tools/ycmd/config.vim	/^  let g:ycm_complete_in_strings=1$/;"	v
+g:ycm_error_symbol	layers/+tools/ycmd/config.vim	/^  let g:ycm_error_symbol='✖'$/;"	v
+g:ycm_filetype_blacklist	layers/+tools/ycmd/config.vim	/^  let g:ycm_filetype_blacklist={$/;"	v
+g:ycm_global_ycm_extra_conf	layers/+tools/ycmd/config.vim	/^  let g:ycm_global_ycm_extra_conf = fnamemodify(expand('<sfile>'), ':h') . '\/global_conf.py'$/;"	v
+g:ycm_min_num_of_chars_for_completion	layers/+tools/ycmd/config.vim	/^  let g:ycm_min_num_of_chars_for_completion=2$/;"	v
+g:ycm_path_to_python_interpreter	layers/+tools/ycmd/config.vim	/^  let g:ycm_path_to_python_interpreter='python'$/;"	v
+g:ycm_seed_identifiers_with_syntax	layers/+tools/ycmd/config.vim	/^  let g:ycm_seed_identifiers_with_syntax=1$/;"	v
+g:ycm_semantic_triggers	layers/+tools/ycmd/config.vim	/^  let g:ycm_semantic_triggers =  {$/;"	v
+g:ycm_warning_symbol	layers/+tools/ycmd/config.vim	/^  let g:ycm_warning_symbol='⚠ '$/;"	v
+generate_dot_spacevim	docs/install.sh	/^generate_dot_spacevim(){$/;"	f
+hi_over_length	layers/+lang/python/config.vim	/^function! s:hi_over_length()$/;"	f
+invoke_javacomplete	layers/+lang/java/packages.vim	/^function! s:invoke_javacomplete()$/;"	f
+invoke_plug	autoload/spacevim.vim	/^function! s:invoke_plug()$/;"	f
+invoke_ycm	layers/+tools/ycmd/packages.vim	/^function! s:invoke_ycm()$/;"	f
+layer	autoload/spacevim.vim	/^function! s:layer(name, ...)$/;"	f
+layers	layers/generate_layers.py	/^    layers = [$/;"	v
+layers_info	autoload/spacevim.vim	/^function! s:layers_info() abort$/;"	f
+leave_full_screen	autoload/spacevim/gui.vim	/^function! s:leave_full_screen()$/;"	f
+lnif	docs/install.sh	/^lnif() {$/;"	f
+loadJava	layers/+lang/java/packages.vim	/^augroup loadJava$/;"	a
+loadNerdtree	layers/+tools/file-manager/packages.vim	/^augroup loadNerdtree$/;"	a
+loadSnips	layers/+programming/code-snippets/packages.vim	/^augroup loadSnips$/;"	a
+loadYcm	layers/+tools/ycmd/packages.vim	/^augroup loadYcm$/;"	a
+msg	docs/install.sh	/^msg() {$/;"	f
+my_cr_function	layers/+completion/auto-completion/config.vim	/^  function! s:my_cr_function()$/;"	f
+my_plugin	autoload/spacevim.vim	/^function! s:my_plugin(plugin, ...)$/;"	f
+new_window	autoload/spacevim/layer.vim	/^function! s:new_window()$/;"	f
+packages	autoload/spacevim.vim	/^function! s:packages()$/;"	f
+parse_options	autoload/spacevim.vim	/^function! s:parse_options(arg)$/;"	f
+path	autoload/spacevim.vim	/^function! s:path(path)$/;"	f
+post_user_config	autoload/spacevim.vim	/^function! s:post_user_config()$/;"	f
+program_exists	docs/install.sh	/^program_exists() {$/;"	f
+program_must_exist	docs/install.sh	/^program_must_exist() {$/;"	f
+rainbowLisp	layers/+programming/programming/config.vim	/^  augroup rainbowLisp$/;"	a
+register_plugin	autoload/spacevim.vim	/^function! s:register_plugin()$/;"	f
+s:TYPE	autoload/spacevim.vim	/^let s:TYPE = {$/;"	v
+s:aqua	layers/+tools/file-manager/config.vim	/^  let s:aqua =  '3AFFDB'$/;"	v
+s:beige	layers/+tools/file-manager/config.vim	/^  let s:beige = 'F5C06F'$/;"	v
+s:blue	layers/+tools/file-manager/config.vim	/^  let s:blue = '689FB6'$/;"	v
+s:brown	layers/+tools/file-manager/config.vim	/^  let s:brown = '905532'$/;"	v
+s:columns	autoload/spacevim/gui.vim	/^let s:columns=&columns$/;"	v
+s:darkBlue	layers/+tools/file-manager/config.vim	/^  let s:darkBlue = '44788E'$/;"	v
+s:darkOrange	layers/+tools/file-manager/config.vim	/^  let s:darkOrange = 'F16529'$/;"	v
+s:dot_spacevim	autoload/spacevim.vim	/^let s:dot_spacevim = $HOME.'\/.spacevim'$/;"	v
+s:git_orange	layers/+tools/file-manager/config.vim	/^  let s:git_orange = 'F54D27'$/;"	v
+s:green	layers/+tools/file-manager/config.vim	/^  let s:green = '8FAA54'$/;"	v
+s:lightGreen	layers/+tools/file-manager/config.vim	/^  let s:lightGreen = '31B53E'$/;"	v
+s:lightPurple	layers/+tools/file-manager/config.vim	/^  let s:lightPurple = '834F79'$/;"	v
+s:lines	autoload/spacevim/gui.vim	/^let s:lines=&lines$/;"	v
+s:orange	layers/+tools/file-manager/config.vim	/^  let s:orange = 'D4843E'$/;"	v
+s:pink	layers/+tools/file-manager/config.vim	/^  let s:pink = 'CB6F6F'$/;"	v
+s:purple	layers/+tools/file-manager/config.vim	/^  let s:purple = '834F79'$/;"	v
+s:py_exe	autoload/spacevim.vim	/^let s:py_exe = has('python') ? 'python' : 'python3'$/;"	v
+s:qf_height	layers/+programming/programming/config.vim	/^    let s:qf_height = float2nr(round(winheight('%') * 0.3))$/;"	v
+s:red	layers/+tools/file-manager/config.vim	/^  let s:red = 'AE403F'$/;"	v
+s:rspec_red	layers/+tools/file-manager/config.vim	/^  let s:rspec_red = 'FE405F'$/;"	v
+s:salmon	layers/+tools/file-manager/config.vim	/^  let s:salmon = 'EE6E73'$/;"	v
+s:spacevim_buf	autoload/spacevim/layer.vim	/^let s:spacevim_buf = get(s:, 'spacevim_buf', -1)$/;"	v
+s:spacevim_tab	autoload/spacevim/layer.vim	/^let s:spacevim_tab = get(s:, 'spacevim_tab', -1)$/;"	v
+s:white	layers/+tools/file-manager/config.vim	/^  let s:white = 'FFFFFF'$/;"	v
+s:yellow	layers/+tools/file-manager/config.vim	/^  let s:yellow = 'F09F17'$/;"	v
+setup_vim_plug	docs/install.sh	/^setup_vim_plug(){$/;"	f
+spacevim#auto#AddTitle	autoload/spacevim/auto.vim	/^function!  spacevim#auto#AddTitle()$/;"	f
+spacevim#auto#BuildGoFiles	autoload/spacevim/auto.vim	/^function! spacevim#auto#BuildGoFiles()$/;"	f
+spacevim#begin	autoload/spacevim.vim	/^function! spacevim#begin() abort$/;"	f
+spacevim#end	autoload/spacevim.vim	/^function! spacevim#end()$/;"	f
+spacevim#funcs#IsDir	autoload/spacevim/funcs.vim	/^function! spacevim#funcs#IsDir(plugin) abort$/;"	f
+spacevim#funcs#LayerLoaded	autoload/spacevim/funcs.vim	/^function! spacevim#funcs#LayerLoaded(layer) abort$/;"	f
+spacevim#gui#ToggleFullScreen	autoload/spacevim/gui.vim	/^function! spacevim#gui#ToggleFullScreen()$/;"	f
+spacevim#layer#status	autoload/spacevim/layer.vim	/^function! spacevim#layer#status()$/;"	f
+spacevim#layer#update	autoload/spacevim/layer.vim	/^function! spacevim#layer#update(py_exe) abort$/;"	f
+spacevim#util#CompileAndRun	autoload/spacevim/util.vim	/^function! spacevim#util#CompileAndRun()$/;"	f
+spacevim#util#Runtimepath	autoload/spacevim/util.vim	/^function! spacevim#util#Runtimepath()$/;"	f
+spacevim#util#ToggleColorColumn	autoload/spacevim/util.vim	/^function! spacevim#util#ToggleColorColumn()$/;"	f
+spacevim#util#ToggleCursorColumn	autoload/spacevim/util.vim	/^function! spacevim#util#ToggleCursorColumn()$/;"	f
+spacevim#util#err	autoload/spacevim/util.vim	/^function! spacevim#util#err(msg)$/;"	f
+spacevim#util#warn	autoload/spacevim/util.vim	/^function! spacevim#util#warn(cmd, msg)$/;"	f
+spacevimAsyncRun	layers/+programming/programming/config.vim	/^  augroup spacevimAsyncRun$/;"	a
+spacevimBasic	layers/+distributions/spacevim/config.vim	/^augroup spacevimBasic$/;"	a
+spacevimC	layers/+lang/c-c++/config.vim	/^augroup spacevimC$/;"	a
+spacevimCursorline	layers/+distributions/better-defaults/config.vim	/^augroup spacevimCursorline$/;"	a
+spacevimDot	layers/+lang/graphviz/config.vim	/^  augroup spacevimDot$/;"	a
+spacevimEmoji	layers/+fun/emoji/config.vim	/^  augroup spacevimEmoji$/;"	a
+spacevimGUI	layers/+distributions/better-defaults/keybindings.vim	/^augroup spacevimGUI$/;"	a
+spacevimGo	layers/+lang/go/config.vim	/^augroup spacevimGo$/;"	a
+spacevimHtml	layers/+lang/html/config.vim	/^augroup spacevimHtml$/;"	a
+spacevimJava	layers/+lang/java/config.vim	/^augroup spacevimJava$/;"	a
+spacevimMarkdown	layers/+lang/markdown/config.vim	/^augroup spacevimMarkdown$/;"	a
+spacevimNewFile	layers/+programming/programming/config.vim	/^augroup spacevimNewFile$/;"	a
+spacevimPython	layers/+lang/python/config.vim	/^augroup spacevimPython$/;"	a
+spacevimScala	layers/+lang/scala/config.vim	/^augroup spacevimScala$/;"	a
+spacevimStart	layers/+distributions/better-defaults/packages.vim	/^augroup spacevimStart$/;"	a
+spacevimVue	layers/+lang/vue/config.vim	/^augroup spacevimVue$/;"	a
+spacevimYcm	layers/+tools/ycmd/config.vim	/^  augroup spacevimYcm$/;"	a
+spacevim_window_exists	autoload/spacevim/layer.vim	/^function! s:spacevim_window_exists()$/;"	f
+success	docs/install.sh	/^success() {$/;"	f
+sync_repo	docs/install.sh	/^sync_repo() {$/;"	f
+sync_vim_plug	docs/install.sh	/^sync_vim_plug() {$/;"	f
+syntax	autoload/spacevim/layer.vim	/^function! s:syntax()$/;"	f
+to_a	autoload/spacevim.vim	/^function! s:to_a(v)$/;"	f
+topic_base	layers/generate_layers.py	/^topic_base = os.path.expanduser('.\/')$/;"	v
+topic_path	layers/generate_layers.py	/^    topic_path = topic_base + '\/' + t$/;"	v
+topics	layers/generate_layers.py	/^topics = [$/;"	v
+url_prefix	layers/generate_layers.py	/^url_prefix = 'https:\/\/github.com\/liuchengxu\/space-vim\/tree\/master\/layers'$/;"	v
+util#util#source_rc	autoload/util/util.vim	/^fu! util#util#source_rc(file) abort$/;"	f
+z/	layers/+distributions/better-defaults/config.vim	/^      map z\/ <Plug>(incsearch-fuzzyspell-\/)$/;"	m
+z?	layers/+distributions/better-defaults/config.vim	/^      map z? <Plug>(incsearch-fuzzyspell-?)$/;"	m
+zg/	layers/+distributions/better-defaults/config.vim	/^      map zg\/ <Plug>(incsearch-fuzzyspell-stay)$/;"	m
+zvim#util#source_rc	core/util.vim	/^fu! zvim#util#source_rc(file) abort$/;"	f
