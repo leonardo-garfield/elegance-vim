@@ -195,6 +195,7 @@ DOTSPACEVIM
 ########## Main()
 program_must_exist "vim"
 program_must_exist "git"
+apt-get install pip3 neovim
 
 #backup          "$HOME/.vimrc"
 
