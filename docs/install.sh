@@ -6,7 +6,7 @@
 app_name='space-vim'
 dot_spacevim="$HOME/.spacevim"
 [ -z "$APP_PATH" ] && APP_PATH="$HOME/.space-vim"
-[ -z "$REPO_URI" ] && REPO_URI='https://github.com/liuchengxu/space-vim.git'
+[ -z "$REPO_URI" ] && REPO_URI='https://github.com/leonardo-garfield/elegance-vim.git'
 [ -z "$REPO_BRANCH" ] && REPO_BRANCH='master'
 debug_mode='0'
 [ -z "$VIM_PLUG_PATH" ] && VIM_PLUG_PATH="$HOME/.cache/vim-plug/autoload"
