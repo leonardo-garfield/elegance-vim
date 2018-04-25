@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/zhouxu/Project/GWNLA/system/opensource/kernel/common_modules/genlink'
+let g:netrw_dirhist_2='/home/zhouxu'
+let g:netrw_dirhist_3='/home/zhouxu/Project'
+let g:netrw_dirhist_4='/home/zhouxu'
+let g:netrw_dirhist_5='/home/zhouxu/Project'
+let g:netrw_dirhist_6='/home/zhouxu/Project/GWNLA'
+let g:netrw_dirhist_7='/home/zhouxu/Project/GWNLA/application'
+let g:netrw_dirhist_8='/home/zhouxu/Project/GWNLA/application/controller'
+let g:netrw_dirhist_9='/home/zhouxu/Project/GWNLA/application/controller/icc'

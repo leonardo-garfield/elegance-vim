@@ -1,5 +1,6 @@
 scriptencoding utf-8
 
+
 " Smarter cursorline {
 augroup spacevimCursorline
   autocmd!
@@ -33,13 +34,13 @@ endif
 
 " vim-startify {
   let g:startify_custom_header = [
-              \'                                             _',
-              \'         ___ _ __   __ _  ___ ___     __   _(_)_ __ ___',
-              \'        / __| -_ \ / _- |/ __/ _ \____\ \ / / | -_ - _ \',
-              \'        \__ \ |_) | (_| | (_|  __/_____\ V /| | | | | | |',
-              \'        |___/ .__/ \__._|\___\___|      \_/ |_|_| |_| |_|',
-              \'            |_|',
-              \'                  [ space-vim ' . g:spacevim_version . ' ＠' . v:version . ' ]',
+              \'                          _',
+              \'    ____   ___  __ __   _(_)_ __ ___',
+              \'   |  _ \ / _ \/ _ \ \ / / | -_ - _ \',
+              \'   | | | |  __| |_| \ V /| | | | | | |',
+              \'   |_| |_|\___|\___ /\_/ |_|_| |_| |_|',
+              \'        ',
+              \'                  [ neovim ' . g:spacevim_version . ' ＠' . v:version . ' ]',
               \]
 
   let g:startify_list_order = [
@@ -58,5 +59,5 @@ endif
   let g:startify_change_to_vcs_root = 1
 
 " }
-
+hi CurrentWord guifg=#00ff00 guibg=NONE gui=underline,bold,italic ctermfg=196 ctermbg=NONE cterm=underline,bold,italic
 execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/keybindings.vim'

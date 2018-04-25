@@ -141,6 +141,31 @@ vmap k gk
 " }
 
 
+" ======= 引号 && 括号自动匹配 ======= "
+
+:inoremap ( ()<esc>i
+:inoremap ) <c-r>=ClosePair(')')<cr>
+:inoremap { {}<esc>i
+:inoremap } <c-r>=ClosePair('}')<cr>
+:inoremap [ []<esc>i
+:inoremap ] <c-r>=ClosePair(']')<cr>
+:inoremap " ""<esc>i
+:inoremap ' ''<esc>i
+:inoremap ` ``<esc>i
+au FileType scheme,racket,newlisp,lisp,clojure,lfe :inoremap ' '
+au FileType scheme,racket,newlisp,lisp,clojure,lfe :inoremap ` `
+au FileType scheme,racket,newlisp,lisp,clojure,lfe :inoremap * **<esc>i
+au FileType css,scss,less :inoremap : : ;<esc>i
+
+function ClosePair(char)
+    if getline('.')[col('.') - 1] == a:char
+        return '\<Right>'
+    else
+        return a:char
+    endif
+endfunction
+
+
 nnoremap <C-[> :pop <CR>
 ""nnoremap <c-a> :Ag <C-R>=expand("<cWORD>")<CR><CR>"")
 

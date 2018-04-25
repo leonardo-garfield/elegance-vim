@@ -36,7 +36,7 @@ endif
 set shortmess=atOI " No help Uganda information, and overwrite read messages to avoid PRESS ENTER prompts
 set ignorecase     " Case insensitive search
 set smartcase      " ... but case sensitive when uc present
-""set scrolljump=5   " Line to scroll when cursor leaves screen
+"set scrolljump=5   " Line to scroll when cursor leaves screen
 set scrolloff=3    " Minumum lines to keep above and below cursor
 set nowrap         " Do not wrap long lines
 set shiftwidth=4   " Use indents of 4 spaces
@@ -65,7 +65,8 @@ set t_ut=
 set winminheight=0
 set wildmode=list:longest,full
 
-set listchars=tab:→\ ,eol:↵,trail:·,extends:↷,precedes:↶
+"set listchars=tab:→\ ,eol:↵,trail:·,extends:↷,precedes:↶
+set list listchars=tab:\~\ ,trail:.
 
 set whichwrap+=<,>,h,l  " Allow backspace and cursor keys to cross line boundaries
 
@@ -164,6 +165,7 @@ if has('gui_running')
   set novisualbell
   set visualbell t_vb=
 endif
+
 
 
 let &cpo = s:save_cpo

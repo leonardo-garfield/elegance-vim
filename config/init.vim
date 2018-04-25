@@ -1,4 +1,5 @@
 scriptencoding utf-8
+set guicursor=
 
 " Identify platform {
 let g:MAC = has('macunix')

@@ -1,6 +1,6 @@
 scriptencoding utf-8
 
-let g:spacevim_layers_dir = '/layers'
+let g:spacevim_layers_dir = '/autoload/layers'
 let g:spacevim_private_layers_dir = '/private'
 let g:spacevim_nvim = has('nvim') && exists('*jobwait') && !g:WINDOWS
 let g:spacevim_vim8 = has('patch-8.0.0039') && exists('*job_start')

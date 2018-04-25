@@ -2,8 +2,14 @@ scriptencoding utf-8
 
 " Put the :hi command after any :colorscheme command,
 " or the colorscheme can overwrite your highlighting.
-silent! color space-vim-dark
+" silent! color space-vim-dark
 
+
+let g:solarized_termcolors=256
+let g:solarized_termtrans = 1
+let g:solarized_visibility = "normal"
+let g:solarized_contrast= "normal"
+colorscheme solarized
 augroup spacevimBasic
   autocmd!
   " http://vim.wikia.com/wiki/Speed_up_Syntax_Highlighting

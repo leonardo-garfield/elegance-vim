@@ -16,7 +16,7 @@ augroup spacevimStart
               \|  endif
 augroup END
 
-MP 'dominikduda/vim_current_word'
+""MP 'dominikduda/vim_current_word'
 
 " Bug here.
 " MP 'kana/vim-operator-user',         { 'on': '<Plug>(operator-flashy)' }
